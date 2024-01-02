@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selección Condicional</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Seleccione tu destino</h2>
+    <form>
+      <label for="country">País:</label>
+      <select id="country" name="country" onchange="updateCities()">
+        <option value="usa">Estados Unidos</option>
+        <option value="canada">Canadá</option>
+        <option value="uk">Reino Unido</option>
+      
+      </select>
+
+      <label for="city">Ciudad:</label>
+      <select id="city" name="city">
+     
+        <option value="ny">Nueva York</option>
+        <option value="la">Los Ángeles</option>
+        <option value="toronto">Toronto</option>
+        <option value="vancouver">Vancouver</option>
+        <option value="london">Londres</option>
+        <option value="manchester">Mánchester</option>
+        <option value="Alaska"></option>
+      </select>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
